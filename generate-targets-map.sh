@@ -8,5 +8,3 @@ then
     echo "$target_mappings" >> "$targets_file"
     echo "}" >> "$targets_file"
 fi
-
-exec nginx -g 'daemon off;'
