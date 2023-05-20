@@ -1,4 +1,6 @@
-FROM nginx:mainline-alpine
+ARG NGINX_TAG="mainline-alpine"
+
+FROM library/nginx:${NGINX_TAG}
 
 RUN apk add --update --no-cache jq
 
